@@ -50,6 +50,64 @@ li>a{
 .header{
     grid-column: 2/6;
     grid-row: 1/2;
-    background-color: rgb(230, 27, 27);
+    background-color: whitesmoke;
     color: black;
 }
+
+.search-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    gap: 150px;
+}
+
+.search-section> ul{
+    display: flex;
+    gap: 30px;
+}
+
+.form{
+    display: flex;
+    flex: 1;
+}
+
+.form > .search-bar {
+    flex: 1;
+    border-radius: 1rem;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: rgba(185, 185, 185, 0.89);
+}
+
+.welcome-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.nav-upload > ul{
+    display: flex;
+    gap: 30px;
+}
+
+.greeting p{
+    font-weight: 900;
+    margin: 0;
+}
+
+.greet{
+    font-size: 0.5rem;
+}
+
+.nav-upload button{
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    padding: 10px 30px;
+    font-weight: 900;
+    background-color: rgb(17, 141, 199);
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+

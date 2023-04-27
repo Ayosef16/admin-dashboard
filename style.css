@@ -38,6 +38,11 @@ ul{
     gap: 15px;
 }
 
+.nav-container > li, .pref-container > li{
+    display: flex;
+    gap: 10px;
+}
+
 .logo{
     font-size: 1.3rem;
 }
@@ -45,6 +50,11 @@ ul{
 li>a{
     color: white;
     text-decoration: none;
+}
+
+li>img{
+    width: 28px;
+    height: 28px;
 }
 
 .header{
@@ -77,7 +87,7 @@ li>a{
     appearance: none;
     outline: none;
     border: none;
-    background-color: rgba(185, 185, 185, 0.89);
+    background-color: #cbd5e1;
 }
 
 .welcome-section{

@@ -187,6 +187,7 @@ li>img{
     background-color: #cbd5e1;
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr;
     gap: 20px;
 }
 
@@ -202,19 +203,19 @@ li>img{
     padding: 40px;
 }
 
-.project-header, .announcements-header{
+.project-header, .announcements-header, .trending-header{
     margin: 40px 20px 0px;
 }
 
 .projects .project:nth-child(-n+4) {
     grid-column: 1/2;
-    background-color: pink;
+    background-color: white;
     margin-left: 20px;
 }
 
 .projects .project:nth-last-child(-n+3) {
     grid-column: 2/3;
-    background-color: blue;
+    background-color: white;
 }
 
 #fourth-project{
@@ -237,26 +238,61 @@ li>img{
     font-size: 0.8rem;
 }
 
+.announcement-and-trending {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: 2fr 1.5fr;
+    grid-template-columns: 1fr;
+}
+
+
 .announcements{
     display: grid;
-    grid-template-rows: repeat(10,1fr);
+    grid-row: 1/2;
+    gap: 10px;
 }
 
 .announcement-name{
     font-size: 0.8rem;
 }
 
-.announcement-content{
+.announcement-content, .trending-content{
     font-size: 0.6rem;
 }
 
-.announcement-container {
+.trending-user{
+    font-weight: 900;
+}
+
+
+.announcement-container, .trending-container {
     background-color: white;
     border-radius: 1rem;
-    padding: 40px;
-    grid-row: span 9;
+    padding: 30px;
 }
 
 hr{
     margin: 20px 0px;
+}
+
+.trendings{
+    grid-row: 2/3;
+    display: grid;
+    gap: 10px;
+}
+
+.trending{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.trending:nth-child(-n+2) {
+    margin-bottom: 20px;
+}
+
+.trending img{
+    width: 80px;
+    height: 80px;
+    border-radius: 2rem;
 }

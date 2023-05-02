@@ -15,7 +15,7 @@ html{
     grid-template: repeat(5,1fr) / repeat(5, 1fr);
     outline: 5px solid red;
 }
-
+ 
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -25,6 +25,7 @@ html{
     display: grid;
     justify-content: center;
     gap: 50px;
+    grid-template-rows: repeat(8,1fr);
 }
 
 ul{
@@ -32,6 +33,7 @@ ul{
     padding: 0;
     margin: 0;
 }
+
 
 .nav-container, .pref-container{
     display: grid;
@@ -54,7 +56,13 @@ li > a:hover{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    align-self: center;
 }
+
+.nav{
+    grid-row: span 2;
+}
+
 
 .logo > svg{
     width: 50px;
@@ -172,3 +180,55 @@ li>img{
     fill: rgb(17, 141, 199);
 }
 
+
+.main{
+    grid-column: 2/6;
+    grid-row: 2/6;
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.projects{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    grid-column: span 2;
+    gap: 20px;
+}
+
+.project{
+    border-radius: 1rem;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.projects .project:nth-child(-n+3) {
+    grid-column: 1/2;
+    background-color: pink;
+    margin-left: 20px;
+}
+
+.projects .project:nth-last-child(-n+3) {
+    grid-column: 2/3;
+    background-color: blue;
+}
+
+#fourth-project{
+    grid-row: 1/2;
+}
+
+#fifth-project{
+    grid-row: 2/3;
+}
+
+#sixth-project{
+    grid-row: 3/4;
+}
+
+.project-name{
+    font-weight: 900;
+}
+
+.project-content{
+    font-size: 0.8rem;
+}
